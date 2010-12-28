@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Lucas Allan - Personal Blog</title>
+  </head>
+  <body style="font-family: sans-serif;">
+    <h1>Lucas Allan - Personal Blog</h1>
+                            
+    <% @posts.each do |post| %>
+        <a href="/post/<%= post.id%>"><%= post.title%></a><br />
+    <% end %>
+
+  </body>
+</html>
